@@ -5,9 +5,9 @@ flowchart TD
 
     B --> C[3. Normal + Summary JOIN<br>Detail + Summary]
 
-    C --> D[4. Subquery Summary<br>JOIN (SELECT ... GROUP BY ...)]
+    C --> D[4. Subquery Summary<br>Summary built inside JOIN]
 
-    D --> E[5. CTE Summary<br>WITH cte AS (SELECT ... GROUP BY ...)]
+    D --> E[5. CTE Summary<br>Summary defined above query]
 
     E --> F[6. JOIN + CTE<br>Detail + cte_continent]
 
@@ -17,4 +17,5 @@ flowchart TD
     style D fill:#ffe0e0,stroke:#b31a1a,stroke-width:2px
     style E fill:#f0d9ff,stroke:#6b1ab3,stroke-width:2px
     style F fill:#e8e8e8,stroke:#333,stroke-width:2px
+
 ```
